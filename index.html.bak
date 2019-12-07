@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+		<meta name="description" content="A template with a two-sided, magazine-like layout and a flat page flip animation" />
+		<meta name="keywords" content="grid, pageflip, reveal, animation, layout, book, magazine, web design, template, demo" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<svg id="icon-nav" viewBox="0 0 152 63">
+				<title>navarrow</title>
+				<path d="M115.737 29L92.77 6.283c-.932-.92-1.21-2.84-.617-4.281.594-1.443 1.837-1.862 2.765-.953l28.429 28.116c.574.57.925 1.557.925 2.619 0 1.06-.351 2.046-.925 2.616l-28.43 28.114c-.336.327-.707.486-1.074.486-.659 0-1.307-.509-1.69-1.437-.593-1.442-.315-3.362.617-4.284L115.299 35H3.442C2.032 35 .89 33.656.89 32c0-1.658 1.143-3 2.552-3H115.737z"/>
+			</svg>
+		</svg>
+		<main>
+			<div class="bg"><img src="img/main_bg.jpg" alt="" />
+			<div class="slideshow">
+				<header class="codrops-header">
+
+				</header>
+				<div class="slide slide--layout-1 slide--current" id="1">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/1.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/2.png)">
+								<ul class="main_title">
+									<li class="delay-obj title1" data-delay="1000"></li>
+									<li class="delay-obj title2" data-delay="1600"></li>
+									<li class="delay-obj title3" data-delay="2200"></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+ 					<!--<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/3.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/4.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure> -->
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-2" id="2">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/3.png)">
+								<p class="photo"></p>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/4.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-3" id="3">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/5.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/6.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-4" id="4">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/7.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/8.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-5" id="5">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/9.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/10.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-6" id="6">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/11.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/12.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-7" id="7">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/13.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/14.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-8" id="8">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/15.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/16.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-9">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/17.png)">
+								<ul>
+									<li><a href="http://hongsi.x-y.net/2018_ui11/lyj/" target="_blank"><img src="img/bt_1.png" alt="" /></a></li>
+									<li><a href="https://blog.naver.com/PostView.nhn?blogId=petit907&logNo=221370716462&categoryNo=13&parentCategoryNo=0&viewDate=&currentPage=4&postListTopCurrentPage=&from=postList&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=4" target="_blank"><img src="img/bt_2.png" alt="" /></a></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/18.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-10">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/19.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/20.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-11">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/21.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/22.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-12">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/23.png)">
+								<ul>
+									<li><a href="img/img1.jpg" target="_blank"><img src="img/bt_1.png" alt="" /></a></li>
+									<li><a href="https://blog.naver.com/PostView.nhn?blogId=petit907&logNo=221353941771&categoryNo=13&parentCategoryNo=0&viewDate=&currentPage=5&postListTopCurrentPage=1&from=postList&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=5" target="_blank"><img src="img/bt_2.png" alt="" /></a></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/24.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-13">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/25.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/26.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-14">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/27.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/28.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-15">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/29.png)">
+								<ul>
+									<li><a href="https://blog.naver.com/PostView.nhn?blogId=petit907&logNo=221446061823&categoryNo=13&parentCategoryNo=0&viewDate=&currentPage=2&postListTopCurrentPage=1&from=postList&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=2" target="_blank"><img src="img/bt_2.png" alt="" /></a></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/30.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-16">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/31.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/32.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-17">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/33.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/34.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-18">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/35.png)">
+								<ul>
+									<li><a href="img/img2.jpg" target="_blank"><img src="img/bt_1.png" alt="" /></a></li>
+									<li><a href="https://blog.naver.com/PostView.nhn?blogId=petit907&logNo=221339480804&categoryNo=13&parentCategoryNo=0&viewDate=&currentPage=5&postListTopCurrentPage=1&from=postList&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=5" target="_blank"><img src="img/bt_2.png" alt="" /></a></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/36.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-19">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/37.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/38.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-20">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/39.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/40.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-21">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/41.png)">
+								<ul>
+									<li><a href="img/img3.jpg" target="_blank"><img src="img/bt_1.png" alt="" /></a></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/42.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-22">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/43.png)">
+								<ul>
+									<li><a href="img/img4.jpg" target="_blank"><img src="img/bt_1.png" alt="" /></a></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/44.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-23" id="23">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/45.png)">
+								<ul>
+									<li><a href="img/img5.jpg" target="_blank"><img src="img/bt_1.png" alt="" /></a></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/46.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<div class="slide slide--layout-24" id="24">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/47.png)"></div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/48.png)">
+								<ul>
+									<li><a href="mailto:petit907@naver.com"><img src="img/btn_contact.png" alt="" /></a></li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title"></h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left"></span>
+					<span class="slide__number slide__number--right"></span>
+				</div>
+				<!-- revealer -->
+				<div class="revealer">
+					<div class="revealer__item revealer__item--left"></div>
+					<div class="revealer__item revealer__item--right"></div>
+				</div>
+				<nav class="arrow-nav">
+					<button class="arrow-nav__item arrow-nav__item--prev" onclick="button1_click();">
+						<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
+					</button>
+					<button class="arrow-nav__item arrow-nav__item--next" onclick="button2_click();">
+						<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
+					</button>
+				</nav>
+				<!-- navigation -->
+				<nav class="nav nav--open">
+					<button class="nav__button">
+						<span class="nav__button-text"></span>
+					</button>
+					<h2 class="nav__chapter"></h2>
+					<div class="toc">
+						<a class="toc__item" href="#entry-1">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item"  id="toc__item2"  href="#entry-2">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-3">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+ 						<a class="toc__item" href="#entry-4">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-5">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-6">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-7">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" id="toc__item8" href="#entry-8">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-9">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-10">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-11">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-12">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-13">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-14">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-15">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-16">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-17">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-18">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-19">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-20">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" href="#entry-21">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item"  href="#entry-22">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item"  id="toc__item23" href="#entry-23">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+						<a class="toc__item" id="toc__item24" href="#entry-24">
+							<span class="toc__item-page"></span>
+							<span class="toc__item-title"></span>
+						</a>
+
+					</div>
+				</nav>
+				<!-- little sides -->
+				<div class="slideshow__indicator"></div>
+				<div class="slideshow__indicator"></div>
+			</div>
+			</div>
+		</main>
+		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/DB_delayMoving.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script type="text/javascript">
+			$('.main_title').DB_delayMoving({
+                        key:'c65806',
+                        winPer:200  
+                    });
+
+
+		</script>
+	<script type="text/javascript">
+$(document).ready(function() {
+		$('.toc__item').on('click', function () {
+	 var tBtn = $(".toc__item");
+	var target = $(this);				
+	var index = target.index();
+	tBtn.removeClass("active");
+	target.addClass("active");
+
+	});
+	});
+	</script>
+
+	<script type="text/javascript">
+		var tBtn = $(".toc__item");
+
+		function button2_click(){
+				var id_by_class = $('.slide--current').attr('id');
+				if (id_by_class == "1")
+				{
+					tBtn.removeClass("active");
+					$('#toc__item2').addClass("active");
+				} else if (id_by_class == "7")
+				{
+					tBtn.removeClass("active");
+					$('#toc__item8').addClass("active");				
+				}else if (id_by_class == "23")
+				{
+					tBtn.removeClass("active");
+					$('#toc__item24').addClass("active");
+				}
+		}
+
+		function button1_click(){
+				var id_by_class = $('.slide--current').attr('id');
+				if (id_by_class == "2")
+				{
+					tBtn.removeClass("active");
+				} else if (id_by_class == "8")
+				{
+					tBtn.removeClass("active");
+					$('#toc__item2').addClass("active");				
+				}else if (id_by_class == "24")
+				{
+					tBtn.removeClass("active");
+					$('#toc__item8').addClass("active");
+				}
+		}
+
+	</script>
+	</body>
+</html>
